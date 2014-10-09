@@ -1,0 +1,8 @@
+Web service update assignment plugin for Moodle 2.X
+------------------------------------------
+
+We're trying to implement Moodle web-service for apdating assignment text. We're basing on a source code with template plugin found in [moodle-local_wstemplate](https://github.com/moodlehq/moodle-local_wstemplate).
+
+To test:
+1- install the plugin in moodle/local/ws_assign/
+2- Read, setup and run client/client.py
