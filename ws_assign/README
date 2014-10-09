@@ -5,4 +5,4 @@ We're trying to implement Moodle web-service for apdating assignment text. We're
 
 To test:
 1- install the plugin in moodle/local/ws_assign/
-2- Read, setup and run client/client.py
+2- Read, setup and run [client](https://github.com/ulysses4ever/moodle-assignment-client).
