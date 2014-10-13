@@ -74,9 +74,10 @@ class local_ws_assign_external extends external_api {
                                         0, false, MUST_EXIST);
         $course = $DB->get_record(
             'course', array('id' => $cm->course), '*', MUST_EXIST);
-        $assign = new assign($context, $cm, $course);
-        $assignment_instance = $assign->get_instance();
+        $asgn = new assign($context, $cm, $course);
+        $assignment_instance = $asgn->get_instance();
         $assignment_instance->intro = $assignment_text;
+		$asgn->update_calendar($cm);
         
         return $DB->update_record('assign', $assignment_instance);
     }
